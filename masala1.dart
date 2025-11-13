@@ -1,91 +1,48 @@
-//assiy sintaksis va input/output
-
-//1
-// void main() {
-//   print("hello world");
-// }
-
-//2
-// import 'dart:io';
-
-// void main() {
-//   String? name = stdin.readLineSync();
-//   print("Salom $name");
-// }
-
-// 3
-// import 'dart:io';
-
-// void main() {
-//   // 1-sonni kiritish
-//   stdout.write('1-sonni kiriting: ');
-//   String? birinchi = stdin.readLineSync();
-
-//   // 2-sonni kiritish
-//   stdout.write('2-sonni kiriting: ');
-//   String? ikkinchi = stdin.readLineSync();
-
-//   // Matnni sonlarga aylantiramiz
-//   int son1 = int.parse(birinchi!);
-//   int son2 = int.parse(ikkinchi!);
-
-//   // Yig‘indini hisoblaymiz
-//   int yigindi = son1 + son2;
-
-//   print('Yig‘indi: $yigindi');
-// }
-
-//4
-
-import 'dart:io';
-
 void main() {
-  stdout.write('1-sonni kiriting: ');
-  String? a = stdin.readLineSync();
+  // int a = 12;
+  // int b = 3;
+  // int yigindi = a + b;
+  // print("yigindi: $yigindi");
 
-  stdout.write('2-sonni kiriting: ');
-  String? b = stdin.readLineSync();
+  // int x = 6;
+  // int y = 7;
+  // int kupaytr = x * y;
+  // print("kupaytr: $kupaytr");
 
-  stdout.write('3-sonni kiriting: ');
-  String? c = stdin.readLineSync();
+  // for (int i = 1; i <= 5; i++) {
+  //   print(i);
+  // }
+  // int a = 5;
+  // int b = 7;
 
-  int? n1 = int.tryParse(a ?? '');
-  int? n2 = int.tryParse(b ?? '');
-  int? n3 = int.tryParse(c ?? '');
+  // if (a > b) {
+  //   print("a katta$a");
+  // } else {
+  //   print('b kotta$b');
+  // }
 
-  if (n1 == null || n2 == null || n3 == null) {
-    print('Iltimos, to‘g‘ri butun son kiriting!');
-  } else {
-    int engKichik = n1;
-    if (n2 < engKichik) engKichik = n2;
-    if (n3 < engKichik) engKichik = n3;
+  // int num = 5;
+  // if (num > 0) {
+  //   print("Musbat son");
+  // } else if (num < 0) {
+  //   print("Manfiy son");
+  // } else {
+  //   print("Son 0 ga teng");
+  // }
 
-    print('Eng kichigi: $engKichik');
-  }
+  // int i = 1;
+  // while (i <= 5) {
+  //   print(i);
+  //   i++;
+  // }
+
+  // int sum = 0;
+  // int i = 1;
+
+  // while (i <= 10) {
+  //   sum += i; // sum = sum + i
+  //   i++;
+  // }
+
+  // print("Yig‘indi: $sum");
 }
-// import 'dart:io';
-
-// void main() {
-//   stdout.write('1-sonni kiriting: ');
-//   String? a = stdin.readLineSync();
-
-//   stdout.write('2-sonni kiriting: ');
-//   String? b = stdin.readLineSync();
-
-//   stdout.write('3-sonni kiriting: ');
-//   String? c = stdin.readLineSync();
-
-//   int? n1 = int.tryParse(a ?? '');
-//   int? n2 = int.tryParse(b ?? '');
-//   int? n3 = int.tryParse(c ?? '');
-
-//   if (n1 == null || n2 == null || n3 == null) {
-//     print('Iltimos, to‘g‘ri butun son kiriting!');
-//   } else {
-//     int engKichik = n1;
-//     if (n2 < engKichik) engKichik = n2;
-//     if (n3 < engKichik) engKichik = n3;
-
-//     print('Eng kichigi: $engKichik');
-//   }
-// }
