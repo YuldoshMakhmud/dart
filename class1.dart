@@ -70,3 +70,21 @@ class Person {
     return "My name is $name\nMy age is: $age\nMy hometown is $location";
   }
 }
+// class Person {
+//   String name;
+//   int age;
+//   String location;
+//   Person(this.name, this.age, this.location);
+
+//   Person fromJson(Map<String, dynamic> json) {
+//     String name = json['name'];
+//     int age = json['age'];
+//     String location = json['location'];
+//     return Person(name, age, location);
+//   }
+
+//   @override
+//   String toString() {
+//     return "My name is $name\nMy age is: $age\nMy hometown is $location";
+//   }
+// }
